@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>about</title>
+	<meta charset="utf-8">
+</head>
+<body>	
+	<canvas id="sky"></canvas>
+
+	<div class="info">
+		<div>
+			<img src="https://raw.githubusercontent.com/ayuzero/MERN-hw/master/img/pofile.jpeg" height="200px">
+		</div>
+		<div class="text">
+			<p>我是林怡萱  很高興認識你</p>
+			<p>一隻很和善的天蠍女：）</p>
+			<p>喜歡到處走走逛逛還有聽音樂</p>
+			<p>我看過各式各樣的展覽</p>
+			<p>歡迎來找我玩、找我聊天</p>
+		</div>
+	</div>
+	<div class="contact">		
+		<h2>Contact Me</h2>
+
+		<form action="">
+  		<input type="text" id="n" autofocus>
+  		<label for="n" class="name"><span class="label-text">Name</span></label>
+
+  		<input type="email" id="e">
+  		<label for="e" class="email"><span class="label-text">Email</span></label>
+
+  		<input type="message" id="m">
+ 		<label for="m" class="message"><span class="label-text">Message</span></label>
+
+  		<input type="submit" value="Send message" class="button">
+		</form>
+	</div>
+	<!-- <script type="text/javascript" src="js/about.js"></script> -->
+</body>
+
+<style type="text/css">
+	body{
+		margin: 0;
+	 }
+	 .info{
+	 	font-size: 20px;
+	 	font-family: Microsoft JhengHei;
+	 	position: relative;
+	 	top: -700px;	
+	 }
+	 .info img{
+	 	position: absolute;
+	 	top: 150px;
+	 	left: 200px;
+	 }
+	.text{
+		position: absolute;
+		left: 185px;
+		top: 405px;
+		color: #d0e5ee;
+		font-size: 17px;
+		text-align:center;
+		border-bottom: none;
+	}
+	.contact{
+		width: 400px;
+		position: absolute;
+		top: 200px;
+		left: 650px;
+	}
+</style>
+
+<style type="text/css">
+	h2 {
+	  margin: 0 0 0.25em;
+	  font-size: 2em;
+	  font-weight: 300;
+	  color: #d0e5ee;
+	  font-family: Comic Sans MS;
+	}
+
+	form {
+	  position: relative;
+	}
+
+	textarea {
+	  resize: none;
+	}
+
+	input,
+	textarea {
+	  background: transparent;
+	  border: 0;
+	  box-sizing: border-box;
+	  color: inherit;
+	  margin: 0.5em 0;
+	  padding: 0.5em;
+	  width: 100%;
+	}
+	input:focus,
+	textarea:focus {
+	  outline: 0;
+	}
+
+	label {
+	  position: absolute;
+	  left: 0;
+	  width: 100%;
+	}
+	label::before, label::after {
+	  border-width: 1.5px;
+	  border-style: solid;
+	  content: ' ';
+	  pointer-events: none;
+	  position: absolute;
+	  -webkit-transition: 0.75s;
+	          transition: 0.75s;
+	  width: 5%;
+	  height: 2.25em;
+	  z-index: 1;
+	}
+	label::before {
+	  border-right: 0;
+	}
+	label::after {
+	  border-left: 0;
+	  right: 0;
+	}
+
+	.label-text {
+	  background: #181b31;
+	  display: block;
+	  padding: 0.5em 1em;
+	  position: absolute;
+	  right: 0;
+	  -webkit-transition: 1s;
+	          transition: 1s;
+	}
+	.label-text::after {
+	  border-top: 1px solid;
+	  content: ' ';
+	  display: block;
+	  -webkit-transition: 1s;
+	          transition: 1s;
+	}
+
+	input:focus + label::before, input:focus + label::after,
+	textarea:focus + label::before,
+	textarea:focus + label::after {
+	  width: 50%;
+	}
+	input:focus + label .label-text,
+	textarea:focus + label .label-text {
+	  -webkit-transform: translate3d(100%, 0, 0);
+	          transform: translate3d(100%, 0, 0);
+	}
+	input:focus + label .label-text::after,
+	textarea:focus + label .label-text::after {
+	  -webkit-transform: translate3d(-100%, -0.75em, 0);
+	          transform: translate3d(-100%, -0.75em, 0);
+	  width: 1em;
+	}
+
+	#n {
+	  color: #09805c;
+	}
+
+	#e {
+	  color: #07c83e;
+	}
+
+	#n:focus + label::before,
+	#n:focus + label::after {
+	  border-color: #09805c;
+	}
+
+	#e:focus + label::before,
+	#e:focus + label::after {
+	  border-color: #07c83e;
+	}
+
+	.name {
+	  color: #09805c;
+	  top: 0.5em;
+	}
+	.name::before, .name::after {
+	  border-color: rgba(9, 128, 92, 0.3);
+	  top: 0;
+	}
+
+	.email {
+	  color: #07c83e;
+	  top: 3.85em;
+	}
+	.email::before, .email::after {
+	  border-color: rgba(7, 200, 62, 0.3);
+	  top: 0;
+	}
+
+	#m {
+	  height: 8em;
+	}
+
+	.message {
+	  color: #A848FF;
+	  top: 7.25em;
+	}
+	.message::before, .message::after {
+	  height: 8em;
+	}
+
+	.button {
+	  color: #e9165d;
+	  border: 1px solid;
+	  position: relative;
+	  -webkit-transition: 0.3s;
+	          transition: 0.3s;
+	}
+	.button:hover {
+	  background: rgba(233, 22, 93, 0.2);
+	}
+
+	@media (min-width: 660px) and (max-width: 856px) {
+	  body {
+	    max-width: calc(100% - 12em);
+	  }
+	}
+</style>
+
+<script >
+	(function(){
+    var $ = (function(elm){
+        return document.querySelector(elm);
+    }),
+    Stars = function(){
+        var num = (Math.min(window.innerWidth, window.innerHeight) / Math.max(window.innerWidth, window.innerHeight)) * 750, //Math.abs(window.innerWidth - window.innerHeight),
+            makeStar = function(){
+                return {
+                    radius: Math.random() * (3 - .5) + .5,
+                    pos: {
+                        x: Math.random() * c.width,
+                        y: Math.random() * c.height
+                    },
+                    moveTo: {
+                        x: Math.random() * c.width,
+                        y: Math.random() * c.height
+                    },
+                    bigger: ~~(Math.random() * 2),
+                    speed: Math.random() * (c.width / c.height / 40)
+                }
+            },
+            stars = [],
+            draw = function(star){
+                ctx.fillStyle = "#fff";
+                ctx.beginPath();
+                ctx.arc(star.pos.x, star.pos.y, star.radius, 0, Math.PI * 2);
+                ctx.fill();
+                if(star.bigger){
+                    star.radius += .01;
+                    if(star.radius >= 3) star.bigger = false;
+                }else{
+                    star.radius -= .01;
+                    if(star.radius <= .3) star.bigger = true;
+                }
+                if(
+                    star.moveTo.x >= star.pos.x - 5 &&
+                    star.moveTo.x <= star.pos.x + 5
+                ){
+                    star.moveTo.x = Math.random() * c.width;
+                }
+                else if(star.moveTo.x < star.pos.x) star.pos.x -= star.speed;
+                else if(star.moveTo.x > star.pos.x) star.pos.x += star.speed;
+                if(
+                    star.moveTo.y >= star.pos.y - 5 &&
+                    star.moveTo.y <= star.pos.y + 5
+                ){
+                    star.moveTo.y = Math.random() * c.height;
+                }
+                else if(star.moveTo.y < star.pos.y) star.pos.y -= star.speed;
+                else if(star.moveTo.y > star.pos.y) star.pos.y += star.speed;
+                
+                for(var i = 0; i < stars.length; i++){
+                    if(
+                        star != stars[i] &&
+                        Math.sqrt(
+                            (star.pos.x - stars[i].pos.x) * (star.pos.x - stars[i].pos.x) + 
+                            (star.pos.y - stars[i].pos.y) * (star.pos.y - stars[i].pos.y)
+                        ) < 50
+                    ){
+                        ctx.beginPath();
+                        ctx.moveTo(star.pos.x, star.pos.y);
+                        ctx.lineTo(stars[i].pos.x, stars[i].pos.y);
+                        ctx.closePath();
+                        ctx.strokeStyle = "#fff";
+                        ctx.lineWidth = .025;
+                        ctx.stroke();
+                    }
+                }
+            }
+        return {
+            init: function(){
+                for(var i = 0; i < num; i++){
+                    stars.push(new makeStar());
+                }
+            },
+            move: function(){
+                setInterval(function(){
+                    ctx.clearRect(0, 0, c.width, c.height);
+                    background();
+                    for(var i = 0; i < stars.length; i++){
+                        draw(stars[i]);
+                    }
+                }, 1);
+            }
+        }
+    }
+    c = $("#sky"),
+    background = function(){
+        var grdnt = ctx.createLinearGradient(0, 0, 0, c.height);
+        grdnt.addColorStop(0, "#000");
+        grdnt.addColorStop(.5, "#135288");
+        grdnt.addColorStop(1, "#0C5663");
+        ctx.fillStyle = grdnt;
+        ctx.fillRect(0, 0, c.width, c.height);
+    },
+    sky = new Stars();
+    
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
+
+    var ctx = c.getContext("2d");
+    
+    sky.init();
+    background();
+    sky.move();
+    window.addEventListener("resize", function(){
+        c.width = window.innerWidth;
+        c.height = window.innerHeight;
+    }, true);
+}());
+</script>
+</html>
