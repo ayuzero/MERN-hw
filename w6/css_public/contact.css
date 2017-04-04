@@ -1,0 +1,175 @@
+/*
+
+My Custom CSS
+
+*/
+html,body{
+  margin: 0;
+  background:url('../img/12466206_943042749108312_8694046662038264394_o.jpg');
+}
+/* --------------------------------------
+   navbar
+   -------------------------------------- */
+   .navbar-inverse { background:url('../img/background.jpg');}
+   .navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #080808}
+   .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #B0ACAC}
+   .dropdown-menu { background-color: #FFFFFF}
+   .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #428BCA}
+   .navbar-inverse { background-image: none; }
+   .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+   .navbar-inverse { border: none;}
+   .navbar-inverse .navbar-brand { color: #000000}
+   .navbar-inverse .navbar-brand:hover { color: #2E8FFF}
+   .navbar-inverse .navbar-nav>li>a { color: #292929}
+   .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #FFFFFF}
+   .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #080808}
+   .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #FFFFFF}
+   .dropdown-menu>li>a { color: #000000}
+   .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF}
+   .navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #000000}
+   .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
+   .navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #000000}
+   .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
+   .Now{ background-color: #706E6E}
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+.hambugar{
+  background-color: #080808;
+}
+p,h2,h3,span,.navbarli{
+  font-family: 'Merienda One', 'Ms PGothic';
+}
+#contact{
+  margin-top: 10vh;
+
+}
+h2{
+  font-weight: bold;
+  font-size: 30px;
+}
+.line{
+  border: 2px solid black;
+  margin-bottom: 5vh;
+}
+.text{
+  margin-top: 20vh;
+  font-size: 32px;
+}
+.text img{
+  margin-top: -10vh;
+  margin-bottom: 5vh;
+  width: 7vw;
+  height: 12vh;
+}
+/* --------------------------------------
+  Media Queries
+  -------------------------------------- */
+
+/* Portrait & landscape phone */
+   @media (min-width:1200px) {
+     .pic img{
+       width: 400px;
+       height: 400px;
+       margin-top: 3vh;
+       margin-left: 4vw;
+     }
+     .text{
+       margin-left: 50px;
+       padding-left: 3vw;
+     }
+     .text img{
+       margin-left: 3vw;
+       margin-bottom: 10vh;
+       width: 50px;
+       height: 50px;
+     }
+     .text p{
+       margin-bottom: 5vh;
+       margin-left: 1vw;
+       font-size: 24px;
+
+     }
+   }
+   @media (max-width: 1200px) {
+     .pic img{
+       width: 300px;
+       height: 300px;
+       margin-top: 5vh;
+       margin-left:1vw;
+
+     }
+     .text{
+       margin-left: 50px;
+       margin-top: 15vh;
+     }
+     .text img{
+       margin-left: -6vw;
+       width: 50px;
+       height: 50px;
+     }
+     .text p{
+       margin-bottom: 3vh;
+       margin-left: -6vw;
+       font-size: 20px;
+     }
+   }
+
+   /* Landscape phone to portrait tablet */
+   @media (max-width: 768px) {
+     .pic{
+       text-align: center;
+     }
+     .pic img{
+       width: 350px;
+       height: 350px;
+       margin-top: 5vh;
+       margin-left: 4vw;
+     }
+     .text{
+       margin-left: 35vw;
+       margin-top: 20vh;
+     }
+     .text img{
+       margin-top: -10vh;
+       margin-bottom: 7vh;
+       margin-right: 10vw;
+       width: 70px;
+       height: 70px;
+     }
+     .text p{
+      margin-bottom: 5vh;
+      font-size: 24px;
+      margin-right: 10vw;
+     }
+   }
+
+   /* Large desktop */
+   @media (max-width: 480px) {
+     .pic{
+       text-align: center;
+     }
+     .pic img{
+       width: 350px;
+       height: 350px;
+       margin-top: 5vh;
+     }
+     .text{
+       margin-top: 20vh;
+     }
+     .text img{
+       margin-top: -10vh;
+       margin-bottom: 5vh;
+       margin-right: 8vw;
+       margin-left: 3vw;
+       width: 60px;
+       height: 60px;
+     }
+     .text p{
+       margin-bottom: 5vh;
+       margin-left: -30px;
+       font-size: 16px;
+     }
+   }

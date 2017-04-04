@@ -1,0 +1,203 @@
+/*
+
+My Custom CSS
+
+*/
+html,body{
+  margin: 0;
+  background:url('../img/12466206_943042749108312_8694046662038264394_o.jpg');
+}
+/* --------------------------------------
+   navbar
+   -------------------------------------- */
+  .navbar-inverse { background:url('../img/background.jpg');}
+  .navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #080808}
+  .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #B0ACAC}
+  .dropdown-menu { background-color: #FFFFFF}
+  .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #428BCA}
+  .navbar-inverse { background-image: none; }
+  .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+  .navbar-inverse { border: none;}
+  .navbar-inverse .navbar-brand { color: #000000}
+  .navbar-inverse .navbar-brand:hover { color: #2E8FFF}
+  .navbar-inverse .navbar-nav>li>a { color: #292929}
+  .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #FFFFFF}
+  .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #080808}
+  .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #FFFFFF}
+  .dropdown-menu>li>a { color: #000000}
+  .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF}
+  .navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #000000}
+  .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
+  .navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #000000}
+  .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
+  .Now{ background-color: #706E6E}
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+.hambugar{
+  background-color: #080808;
+}
+#contact{
+  margin-top: 10vh;
+
+}
+p,h2,h3,.navbarli{
+  font-family: 'Merienda One','Ms PGothic';
+}
+h2{
+  font-weight: bold;
+}
+h3{
+  font-size: 24px !important;
+}
+.line{
+  border: 2px solid black;
+  margin-bottom: 5vh;
+}
+.text{
+  padding-left: 5vw;
+  padding-top: 3vh;
+  font-size: 32px;
+}
+.text img{
+  margin-bottom: 5vh;
+  width: 7vw;
+  height: 12vh;
+}
+.text2,.more{
+  margin-top: 30px;
+  font-size: 17px;
+}
+.read{
+  font-weight: bold;
+  float: right;
+  margin: 10px;
+  cursor: pointer;
+}
+.noRead{
+  font-weight: bold;
+  font-size: 20px;
+  float: right;
+  margin: 10px;
+  cursor: pointer;
+}
+.member{
+  margin-top: 30px;
+  text-align: center;
+}
+.member img{
+  width: 150px;
+  height: 150px;
+}
+.member h3{
+  font-weight: bold;
+}
+/* --------------------------------------
+  Media Queries
+  -------------------------------------- */
+
+/* Portrait & landscape phone */
+   @media (min-width:1200px) {
+    .pic{
+       padding-top: 15vh;
+    }
+     .pic img{
+       width: 400px;
+       margin-top: -10vh;
+       margin-left: 4vw;
+     }
+     .text{
+       margin-left: 50px;
+       padding-left: 3vw;
+       padding-top: 150px;
+     }
+     .text h2{
+       margin-left: 5vw;
+     }
+     .member img{
+       margin-bottom: 35px;
+     }
+     .member h3{
+       float: left;
+       margin-top: 55px;
+     }
+   }
+   @media (max-width: 1200px) {
+     .pic img{
+       width: 320px;
+       height: 320px;
+       margin-top: 3vh;
+       margin-left:1vw;
+     }
+     .text{
+       margin-left: 50px;
+       padding-top: 100px;
+     }
+     .text img{
+       margin-left: 3vw;
+       width: 50px;
+       height: 50px;
+     }
+     .text h2{
+       margin-bottom: 3vh;
+       margin-left: 4vw;
+     }
+     .member img{
+       width: 100px;
+       height: 100px;
+       margin-bottom: 20px;
+     }
+     .member h3{
+       margin-top: -10px;
+       margin-bottom: 50px;
+     }
+   }
+
+   /* Landscape phone to portrait tablet */
+   @media (max-width: 768px) {
+     .pic{
+       text-align: center;
+     }
+     .pic img{
+       width: 450px;
+       height: 450px;
+       margin-top: 5vh;
+       margin-left: 4vw;
+     }
+     .text{
+       padding: 0;
+       margin-top: 5vh;
+     }
+     .text img{
+       margin-top: -10vh;
+       margin-bottom: 7vh;
+       margin-right: 10vw;
+       width: 70px;
+       height: 70px;
+     }
+   }
+
+   /* Large desktop */
+   @media (max-width: 480px) {
+     .pic{
+       text-align: center;
+     }
+     .pic img{
+       width: 350px;
+       height: 350px;
+       margin-top: 5vh;
+     }
+     .text{
+       text-align: center;
+       margin-top: 3vh;
+     }
+     .text img{
+       margin-top: -10vh;
+       margin-bottom: 5vh;
+       margin-right: 8vw;
+       margin-left: 3vw;
+       width: 60px;
+       height: 60px;
+     }
+   }

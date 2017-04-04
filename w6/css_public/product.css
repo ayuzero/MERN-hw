@@ -1,0 +1,137 @@
+/*
+
+My Custom CSS
+
+*/
+html,body{
+  margin: 0;
+  background:url('../img/12466206_943042749108312_8694046662038264394_o.jpg');
+  font-family: 'Merienda One', 'Ms PGothic';
+
+}
+/* --------------------------------------
+   navbar
+   -------------------------------------- */
+  .navbar-inverse { background:url('../img/background.jpg');}
+  .navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #080808}
+  .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #B0ACAC}
+  .dropdown-menu { background-color: #FFFFFF}
+  .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #428BCA}
+  .navbar-inverse { background-image: none; }
+  .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+  .navbar-inverse { border: none;}
+  .navbar-inverse .navbar-brand { color: #000000}
+  .navbar-inverse .navbar-brand:hover { color: #2E8FFF}
+  .navbar-inverse .navbar-nav>li>a { color: #292929}
+  .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #FFFFFF}
+  .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #080808}
+  .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #FFFFFF}
+  .dropdown-menu>li>a { color: #000000}
+  .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF}
+  .navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #000000}
+  .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
+  .navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #000000}
+  .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
+  .Now{ background-color: #706E6E}
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+.hambugar{
+  background-color: #080808;
+}
+#contact{
+  margin-top: 10vh;
+
+}
+
+h2{
+  font-weight: bold;
+
+}
+.line{
+  border: 2px solid black;
+  margin-bottom: 5vh;
+}
+.text{
+  margin-top: 20vh;
+  font-size: 32px;
+}
+.text img{
+  margin-top: -10vh;
+  margin-bottom: 5vh;
+  width: 7vw;
+  height: 12vh;
+}
+
+
+.tab a{
+  text-decoration: none;
+}
+.tab li{
+
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs {
+  width: 100%;
+  height: 32px;
+
+}
+.tabs li {
+  float: left;
+  height: 31px;
+  line-height: 31px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -1px;  /* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+  border-left: none;
+  background: #e1e1e1;
+}
+ul.tabs li a {
+  display: block;
+  padding: 0 20px;
+  color: #000;
+  text-decoration: none;
+}
+ul.tabs li a:hover {
+  background: #ccc;
+}
+.tabs li.active  {
+  background: #626363;
+}
+ul.tabs li.active a:hover {
+  background: #F0F0F0;
+}
+div.tab_container {
+  clear: left;
+  width: 100%;
+  border-top: none;
+  background: #F0F0F0;
+}
+div.tab_container .tab_content {
+  padding: 20px;
+}
+div.tab_container .tab_content h2 {
+  margin: 0 0 20px;
+}
+.tab_content img{
+  width: 80%;
+  height: 20%;
+}
+.pic{
+  padding: 10px;
+}
+.tab_content h5{
+  padding: 10px;
+  font-size: 25px;
+}
+.tab_content p{
+  padding: 10px;
+  font-size: 15px;
+}

@@ -1,0 +1,14 @@
+$(document).ready(function(){
+  $(".more").hide();
+  $(".noRead").hide();
+    $(".read").click(function(){
+        $(".more").show(600);
+        $(".read").hide();
+        $(".noRead").show(800);
+    });
+    $(".noRead").click(function(){
+      $(".more").hide(600);
+      $(".noRead").hide();
+      $(".read").show(800);
+    });
+});
