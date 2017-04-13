@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log in</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../public/index.css"> 
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js" ></script>
+</head>
+<body>	
+	<div class="home">
+    <div class="lable">
+        <h2>Login</h2>
+        <form method="POST" action="/person">
+            Username : <input type="text" id="username" name="username"><br/>
+            Password : <input type="text" id="password" name="password"><br/>
+            <input type="submit" value="Submit">
+        </form>
+        <h2>Data Stored</h2>
+		<% if (userinfos.length) { %>
+		  <ul>
+  		  <% userinfos.forEach(function(userinfo){ %>
+		      <li><%= userinfo['username'] %>  <%= userinfo['password'] %></li>
+		    <% }) %>
+	  	</ul>
+		<% } %>
+    </div>	
+	</div>	
+</body>
+</html>
