@@ -1,0 +1,60 @@
+body{
+	font-family: "微軟正黑體";
+	scrollbar-arrow-color:#fff;
+	scrollbar-face-color:#fff;
+	scrollbar-track-color: #fff;
+	scrollbar-highlight-color: #fff;
+	scrollbar-3dlight-color:#fff;
+	scrollbar-shadow-color:#fff;
+	scrollbar-darkshadow-color:#fff;
+}
+
+.i_m_w{
+	display:none;
+	height:70vh;
+	/*background: #ff0000;*/ /*加進去就知道這裡控制哪裡了*/
+}
+.imw_img{
+	margin-left:50px;
+	margin-top: 50px;
+	display:inline-block;
+	}
+.text{
+	float:left;
+	background:#fff;/*0104改成白的*/
+	width:50%;
+	height:auto;/*0104 這個高會影響圖片的排法*/
+	padding:10px;
+}
+.icon_ori{
+	border-radius:25px;
+}
+.icon_down{
+	display:none;
+	width:50px;
+	height:120px;
+	border-radius:25px;
+	background:#f09093;
+	color:#fff;
+	font-size: 20px;
+	margin-bottom: 5px;
+	margin-top: -3px;
+	-webkit-writing-mode:vertical-lr;
+	writing-mode:vertical-lr;
+}
+.text_align{
+	margin:11px;
+	margin-top:20px;
+}
+#content2{
+	padding:15px;
+	position:absolute;
+	top:15%;
+	left:15%;
+	background:#fff;
+	width:80%;
+	height:78%;
+}
+#content3{
+	display:none;
+}

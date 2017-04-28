@@ -1,0 +1,24 @@
+<hi>留言板</hi>
+<% if (userinfos.length) { %>
+  <ul>
+    <% userinfos.forEach(function(userinfo){ %>
+      <li style="list-style: none outside none">        
+        <div class="name">
+            <span>暱稱：</span>
+            <span><%= userinfo['account'] %></span><br/> 
+        </div>
+        <div class="name">
+            <span>說：</span>
+            <span><%= userinfo['comment'] %></span>
+        </div>
+        <br/>
+        <div class="p_btn">
+            <a href="" class="read" rel=<%= userinfo['_id']%>><img src="../images/view.png" width="20px"></a>
+            <a href="" class="delete" rel=<%= userinfo['_id']%>><img src="../images/del.png" width="20px"></a>
+            <a href="" class="update" rel=<%= userinfo['_id']%>><img  src="../images/edit.png" width="20px"></a>
+        </div>
+        <br/>
+      </li>
+    <% }) %>
+  </ul>
+<% } %>

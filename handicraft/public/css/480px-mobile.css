@@ -1,0 +1,185 @@
+body{
+    overflow-x: hidden;
+    font-family: '微軟正黑體';
+}
+.menu, #icon_imw,.link{
+    display: none;
+}
+#tour480{
+    display:block;
+    position:absolute;
+    left:50%;
+    top:90%;
+    margin-left:-100px;
+    background:none;
+    color:#f77f7f;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.nav{
+    display: none;
+    width:100vw;
+    height:100vh;
+}
+.nav a{
+    text-decoration:none;
+}
+.nav ul{
+    text-align: center;
+    color:#fff;
+    padding:10px;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: #f77f7f;
+}
+#hamburger_icon{
+    position: fixed;
+    top:3%;
+    right:10px;
+}
+.hamburger_iconClick{
+    filter:alpha(opacity=40);
+    opacity:0.4;
+}
+ #hamburger_link{
+    display: block;
+    background: #fff;
+    position:fixed;
+    top:0px;
+    right:0px;
+    z-index: 5;
+ }
+ a {
+    text-decoration:none;
+ }
+ .topic{
+    padding-top:30px;
+    padding-bottom:30px;
+    font-size: 30pt;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+}
+ #content2{
+ 	display:none;
+ }
+ #content3{
+ 	display:block;
+    background:#fff;
+    width:100wv;
+ }
+.header480{
+    background:#fff;
+    width:100wv;
+    text-align:center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.content_nav480{
+    text-align:center;
+    position:relative;
+    left:50%;
+    margin-left:-160px;
+    height:10%;
+    color:#f77f7f;
+}
+.introIcon480{
+    border:1px solid #f77f7f;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    background:#fff;
+    float:left;
+    padding:10px;
+    padding-right:20px;
+    padding-left:20px;
+}
+.makingIcon480{
+    border-top:1px solid #f77f7f;
+    border-bottom:1px solid #f77f7f;
+    border-right:none;
+    border-left:none;
+    background:#fff;
+    float:left;
+    padding:10px;
+    padding-right:20px;
+    padding-left:20px;
+}
+.workIcon480{
+    border:1px solid #f77f7f;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    background:#fff;
+    float:left;
+    padding:10px;
+    padding-right:20px;
+    padding-left:20px;
+}
+.first_visit480{
+    background:#fff;
+    width:100wv;
+    clear:both;
+}
+.intro480,.making480,.work480{
+    background:#fff;
+    width:100wv;
+    clear:both;
+    display:none;
+}
+#lcontent{
+    position: absolute;
+    left:0px;
+    background:#fff;
+    width: 100vw;
+    height: 70vh;
+}
+.show1{
+    background: url(..//images/in2.jpg) no-repeat scroll 0 0 transparent;
+    padding: 0;
+    width: 100vw;
+    height: 70vh;
+    top: 0px;
+    left: 0px;
+}
+.show2{
+    background: url(..//images/0.jpg) no-repeat scroll 0 0 transparent;
+    padding: 0;
+    width: 100vw;
+    height: 70vh;
+    top: 0
+    left: 0;
+}
+.show3{
+    background: url(..//images/dhouse-9.png) no-repeat scroll 0 0 transparent;
+    padding: 0;
+    width: 100vw;
+    height: 70vh;
+    top:0;
+    left: 0;
+}
+.show4{
+    background: url(..//images/sewing/sewing-12.png) no-repeat scroll 0 0 transparent;
+    padding: 0;
+    width: 100vw;
+    height: 70vh;
+    top: 0;
+    left: 0;
+}
+.show5{
+    background: url(..//images/co.jpg) no-repeat scroll 0 0 transparent;
+    padding: 0;
+    width: 100vw;
+    height: 70vh;
+    top: 0;
+    left: 0;
+}
+#cart1 img{
+    width: 40vw;
+}
+#cart2 img{
+    width: 40vw;
+}
+#cart3 img{
+    width: 40vw;
+}
+#cart4 img{
+    width: 40vw;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>留言板</title>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/introduction of items.css">	
+	<link rel="stylesheet" type="text/css" href="css/480px-mobile.css" media="screen and (max-width: 1023px)">
+	<link rel="stylesheet" type="text/css" href="css/480px-mobile.css" media="screen and (max-width: 480px)">
+	<link rel="stylesheet" type="text/css" href="css/480px-mobile.css" media="screen and (max-device-width: 480px)">
+	<link rel="stylesheet" type="text/css" href="css/480px-mobile.css" media="screen and (max-device-width: 1023px)">
+	<script src="js/ejs_production.js"></script>
+	
+</head>
+
+<body>
+	<div class="topic">
+		<a href="index"><font style="color:#f77f7f;">H</font>andicraft</a>
+	</div>
+	<div id="hamburger_link">
+		<span  class="toggle"><img id="hamburger_icon" src="../images/hamburger_link.png"></span><!--漢堡選單的那個icon應該放這-->
+			<nav class="nav">
+			        <a href="index"><ul>首頁</ul></a>
+			        <a href="felted_wool"><ul>羊毛氈</ul></a>
+			        <a href="cookie"><ul>糖霜餅乾</ul></a>
+			        <a href="doll_house"><ul>娃娃屋</ul></a>
+			        <a href="sewing"><ul>手工裁縫</ul></a>
+			        <a href="cart"><ul>購物車</ul></a>
+					<a href="interact"><ul>留言板</ul></a>
+			        <div class="link480" style="width:30vw;position:absolute;left:50%;top:90%;margin-left:-50px;">
+						<a target="_blank" href="https://www.facebook.com/"><img src="../images/facebook.gif" width="30vw"></a>
+						<a target="_blank" href="http://www.plurk.com/"><img src="../images/plurk.png" width="30vw"></a>
+						<a target="_blank" href="https://twitter.com/"><img src="../images/twitter.png" width="30vw"></a>
+					</div>
+	        </nav>
+	</div>
+	<div class="link" style="position:absolute;left:85%;top:5%;">
+		<a target="_blank" href="https://www.facebook.com/"><img src="../images/facebook.gif" width="30vw"></a>
+		<a target="_blank" href="http://www.plurk.com/"><img src="../images/plurk.png" width="30vw"></a>
+		<a target="_blank" href="https://twitter.com/"><img src="../images/twitter.png" width="30vw"></a>
+	</div>
+
+	<div id="content">
+		<ul class="menu">
+			<a href="index"><li><p>主頁</p></li></a>	
+			<a href="felted_wool"><li><p>羊毛氈</p></li></a>
+			<a href="cookie"><li><p>手工餅乾</p></li></a>
+			<a href="sewing"><li><p>手工裁縫</p></li></a>
+			<a href="doll_house"><li><p>娃娃屋</p></li></a>
+			<a href="cart"><li><p>購物車</p></li></a>
+			<a href="interact"><li><p>留言板</p></li></a>
+		</ul>
+	</div>
+	<div  id="content2">		
+		<div id="user">	
+			<div id="userinfo">
+				<%- include('person'); %>
+			</div>
+			<br/>		
+			<div id="userupdate">
+						
+			</div>
+		</div>
+		<div id="usernew" style="float: left">
+			<%- include('form'); %>
+		</div>				
+	</div><!--end the content2-->
+
+<!--below is for 480mobile-->
+<div id="content3" >
+	<div class="header480" >
+		
+	</div>
+	
+	<div class="first_visit480">
+		<div id="userinfo">
+					<%- include('person'); %>
+				</div>
+				
+				<div id="usernew">
+					<%- include('form'); %>
+				</div>
+				<div id="userupdate">
+					
+				</div>				
+	</div>
+	<div class="intro480" >
+		<div id="userupdate">
+					<%- include('person'); %>
+				</div>
+				<div id="usernew">
+					<%- include('form'); %>
+				</div>				
+	</div>
+	
+</div><!--end 480mobile-->
+
+<script src="js/intro_mak_wor.js"></script>
+<script src="js/mobile480-1000_click.js"></script>
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="js/cycle-master/jquery.cycle.lite.js"></script>
+<script type="text/javascript" src="js/fade.js"></script>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

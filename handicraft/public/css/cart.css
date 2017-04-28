@@ -1,0 +1,214 @@
+body{
+	margin: 0px;
+	overflow-x:hidden; 
+}
+.topic a {
+    text-decoration:none;
+ }
+ .topic a:visited {
+    color: inherit;
+ }
+.topic{
+	padding:15px;
+	font-size: 60pt;
+	font-weight: bold;
+	font-family: 'Times New Roman';
+}
+.link{
+  float:left;
+}
+#rcontent{
+	float: left;
+}
+.menu a{
+	text-decoration: none;
+	color: #080303;
+}
+.menu li {	
+	font-family: '微軟正黑體';
+	list-style: none outside none;		
+	width: 13%;
+	text-align: center;
+	background-color: #D9D9D9;
+	position: relative;
+
+}
+.menu li:hover{
+	background-color: #F09093;
+	color:#FFF;
+}
+.menu a:hover{
+	color:#FFF;
+}
+.menu a:active{
+	background-color:#F09093;
+}
+.menu p{
+	font-family: inherit;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+#lcontent{	
+	font-family: '微軟正黑體';
+	position:absolute;
+	top:15%;
+	left:15%;
+	background:#fff;
+	width: 82vw;
+	height: 80vh;
+	z-index: 2;
+	border:none;
+}
+#hamburger_link{
+	display:none;
+}
+/*這段是給chrome*/
+/* 捲軸底色 */
+::-webkit-scrollbar
+{
+background-color:#fff;
+}
+
+/* 捲軸上方的箭頭 */
+::-webkit-scrollbar-button:vertical:decrement{
+background-repeat: no-repeat;
+}
+
+/* 捲軸下方的箭頭 */
+::-webkit-scrollbar-button:vertical:increment {
+background-repeat: no-repeat;
+}
+
+
+/* 捲軸拉的軸軌的顏色 */
+::-webkit-scrollbar-thumb{
+background-color:#fff;
+}
+
+/* 捲軸拉的垂直軸軌設成圓角及顏色 */
+::-webkit-scrollbar-thumb:vertical {
+height: 50px;
+background-color:#fff;
+-webkit-border-radius: 6px;
+}
+
+/* 捲軸拉的橫向軸軌設成圓角及顏色 */
+::-webkit-scrollbar-thumb:horizontal {
+width: 50px;
+background-color:#fff;
+-webkit-border-radius: 3px;
+}
+
+
+/*滾動軸上下左右的最上端角*/
+::-webkit-scrollbar-corner{
+background-color: #fff;
+}
+
+/*標籤頁*/
+#tabs a{
+	font-family: '微軟正黑體';
+	text-decoration: none;
+	background:none;
+	color:#F09093;
+
+}
+#tabs li {	
+	display: inline-block;
+	list-style: none outside none;			
+	text-align: center;
+	background:none;
+	position: relative;
+	border:1px solid #F09093;
+	border-radius: 5px;
+	color:#F09093;
+}
+#tabs li:hover{
+	background-color: #F09093;
+	color:#FFF;
+}
+#tabs a:hover{
+	background-color: #F09093;
+	color:#FFF;
+}
+
+#tabs span{
+	font-family: inherit;
+}
+
+/*羊毛氈*/
+#cart1{
+	background:#fff;
+	width:100%;
+}
+#cart1 img{
+	width: 15vw;
+}
+#cart1 li{
+	display: inline-block;
+	padding-left: 2%;
+	padding-bottom: 6%;
+}
+#cart1 li p{
+	line-height: 7px;
+}
+
+/*手工餅乾*/
+#cart2{
+	background:#fff;
+	width:100%;
+}
+#cart2 img{
+	width: 15vw;
+}
+#cart2 li{
+	display: inline-block;
+	padding-left: 2%;
+	padding-bottom: 6%;
+}
+#cart2 li p{
+	line-height: 5px;
+}
+
+/*手工裁縫*/
+#cart3{
+	background:#fff;
+	width:100%;
+}
+#cart3 img{
+	width: 15vw;
+}
+#cart3 li{
+	display: inline-block;
+	padding-left: 2%;
+	padding-bottom: 6%;
+}
+#cart3 li p{
+	line-height: 5px;
+}
+
+/*娃娃屋*/
+#cart4{
+	background:#fff;
+	width:100%;
+}
+#cart4 img{
+	width: 15vw;
+}
+#cart4 li{
+	display: inline-block;
+	padding-left: 2%;
+	padding-bottom: 6%;
+}
+#cart4 li p{
+	line-height: 5px;
+}
+input{
+	font-size: 16px!important;
+	border:1px solid #F09093;
+	border-radius: 5px;
+	background: #F09093;
+	color:#fff;
+	padding:5px;
+	font-family: '微軟正黑體'!important;
+}

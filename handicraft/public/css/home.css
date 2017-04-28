@@ -1,0 +1,163 @@
+body{
+	margin: 0px;
+	overflow-x:hidden; 
+}
+.topic a {
+    text-decoration:none;
+    color: inherit;
+ }
+.topic a:visited {
+    color: inherit;
+ }
+.topic{
+	padding:15px;
+	font-size: 60pt;
+	font-weight: bold;
+	font-family: 'Times New Roman';
+}
+.link{
+  float:left;
+}
+#rcontent{
+	float: left;
+}
+.menu a{
+	text-decoration: none;
+	color: #080303;
+}
+.menu li {	
+	font-family: '微軟正黑體';
+	list-style: none outside none;		
+	width: 13%;
+	text-align: center;
+	background-color: #D9D9D9;
+	position: relative;
+
+}
+.menu li:hover{
+	background-color: #F09093;
+	color:#FFF;
+}
+.menu a:hover{
+	color:#FFF;
+}
+.menu a:active{
+	background-color:#F09093;
+}
+.menu p{
+	font-family: inherit;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+#lcontent{	
+	position:absolute;
+	top:15%;
+	left:15%;
+	background:#fff;
+	width: 82vw;
+	height: 80vh;
+	z-index: 2;
+}
+.show1{
+	background: url(..//images/in2.jpg) no-repeat scroll 0 0 transparent;
+	padding: 0;
+	width: 82vw;
+	height: 80vh;
+	top: 500px;
+	left: 0px;
+}
+.show2{
+	background: url(..//images/0.jpg) no-repeat scroll 0 0 transparent;
+	padding: 0;
+	width: 82vw;
+	height: 80vh;
+	top: 0;
+	left: 0;
+}
+.show3{
+	background: url(..//images/dhouse-9.png) no-repeat scroll 0 0 transparent;
+	padding: 0;
+	width: 82vw;
+	height: 80vh;
+	top:0;
+	left: 0;
+}
+.show4{
+	background: url(..//images/sewing/sewing-12.png) no-repeat scroll 0 0 transparent;
+	padding: 0;
+	width: 82vw;
+	height: 80vh;
+	top: 0;
+	left: 0;
+}
+.show5{
+	background: url(..//images/co.jpg) no-repeat scroll 0 0 transparent;
+	padding: 0;
+	width: 82vw;
+	height: 80vh;
+	top: 0;
+	left: 0;
+}
+.showdata li{
+	list-style: none outside none;
+}
+
+#user{
+	position: absolute;
+	top: 50px;
+	left: 100px;
+}
+
+#usernew{
+	position: absolute;
+	top: 100px;
+	left: 600px;
+}
+
+#hamburger_link,#tour480{
+	display:none;
+}
+
+/*這段是給chrome*/
+/* 捲軸底色 */
+::-webkit-scrollbar
+{
+background-color:#fff;
+}
+
+/* 捲軸上方的箭頭 */
+::-webkit-scrollbar-button:vertical:decrement{
+background-repeat: no-repeat;
+}
+
+/* 捲軸下方的箭頭 */
+::-webkit-scrollbar-button:vertical:increment {
+background-repeat: no-repeat;
+}
+
+
+/* 捲軸拉的軸軌的顏色 */
+::-webkit-scrollbar-thumb{
+background-color:#fff;
+}
+
+/* 捲軸拉的垂直軸軌設成圓角及顏色 */
+::-webkit-scrollbar-thumb:vertical {
+height: 50px;
+background-color:#fff;
+-webkit-border-radius: 6px;
+}
+
+/* 捲軸拉的橫向軸軌設成圓角及顏色 */
+::-webkit-scrollbar-thumb:horizontal {
+width: 50px;
+background-color:#fff;
+-webkit-border-radius: 3px;
+}
+
+
+/*滾動軸上下左右的最上端角*/
+::-webkit-scrollbar-corner{
+background-color: #fff;
+}
+
